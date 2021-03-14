@@ -57,7 +57,6 @@ I am not responsible for any data loss in relation to the use of this mod (inclu
 ## Changelog
 
 - 02.28.21
-    * Made compatible with JET 1.1.0
     * Added `removeRestrictions` option for backpacks and secure cases
 
 - 02.05.21
