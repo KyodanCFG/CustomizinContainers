@@ -41,11 +41,11 @@ This mod allows you to resize all containers in the game (including pockets), an
 ## Files
 
 - If any of the files below are missing/misplaced, you may have to redownload/reinstall this archive:
-    * src/Customizin.js
-    * mod.config.json
-    * settings.json
-    * settings_default.json
-    * readme.md   
+    * `src/Customizin.js`
+    * `mod.config.json`
+    * `settings.json`
+    * `settings_default.json`
+    * `readme.md`   
 
 ## Need help?
 
