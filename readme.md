@@ -1,6 +1,6 @@
 Customizin' Containers (for JET v1.1.0)
 ----------------
-Version 1.1.0 (03.11.2021)
+Version `1.1.0` (`03.13.2021`)
 By Kyodan
 
 ![Screenshot](cover.png)
@@ -60,7 +60,7 @@ I am not responsible for any data loss in relation to the use of this mod (inclu
 
 ## Changelog
 
-- 02.28.21
+- 03.13.21
     * Added `removeRestrictions` option for backpacks and secure cases
 
 - 02.05.21
