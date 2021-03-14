@@ -3,6 +3,8 @@ Customizin' Containers (for JET v1.1.0)
 Version 1.1.0 (03.11.2021)
 By Kyodan
 
+![Screenshot](cover.png)
+
 This mod allows you to resize all containers in the game (including pockets), and can remove restrictions from backpacks and secure cases!
                                                                              
 ## Info
