@@ -1,0 +1,114 @@
+{
+    "containers": {
+        "customizinContainers": true,
+        "removeRestrictions": false,
+        "pockets": {
+            "one": {
+                "width": 1,
+                "height": 1
+            },
+            "two": {
+                "width": 1,
+                "height": 1
+            },
+            "three": {
+                "width": 1,
+                "height": 1
+            },
+            "four": {
+                "width": 1,
+                "height": 1
+            }
+        },
+        "secure": {
+            "alpha": {
+                "width": 2,
+                "height": 2
+            },
+            "beta": {
+                "width": 3,
+                "height": 2
+            },
+            "epsilon": {
+                "width": 4,
+                "height": 2
+            },
+            "gamma": {
+                "width": 3,
+                "height": 3
+            },
+            "kappa": {
+                "width": 3,
+                "height": 4
+            }
+        },
+        "ammo": {
+            "width": 7,
+            "height": 7
+        },
+        "docs": {
+            "width": 4,
+            "height": 4
+        },
+        "dogtag": {
+            "width": 10,
+            "height": 10
+        },
+        "grenade": {
+            "width": 8,
+            "height": 8
+        },
+        "items": {
+            "width": 8,
+            "height": 8
+        },
+        "items_thicc": {
+            "width": 14,
+            "height": 14
+        },
+        "junk": {
+            "width": 14,
+            "height": 14
+        },
+        "keytool": {
+            "width": 4,
+            "height": 4
+        },
+        "mag": {
+            "width": 7,
+            "height": 7
+        },
+        "meds": {
+            "width": 7,
+            "height": 7
+        },
+        "money": {
+            "width": 7,
+            "height": 7
+        },
+        "pistol": {
+            "width": 4,
+            "height": 3
+        },
+        "sicc": {
+            "width": 5,
+            "height": 5
+        },
+        "thermal": {
+            "width": 8,
+            "height": 8
+        },
+        "wallet": {
+            "width": 2,
+            "height": 2
+        },
+        "weapons": {
+            "width": 5,
+            "height": 10
+        },
+        "weapons_thicc": {
+            "width": 6,
+            "height": 15
+        }
+    }
+}
