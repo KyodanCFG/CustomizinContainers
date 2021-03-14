@@ -12,11 +12,11 @@ This mod allows you to resize all containers in the game (including pockets), an
 ## Info
 
 - By default, this mod changes the following:
-    * Two pockets will be 2 units tall
-    * Junk Box will be 12x16 (easier to see inventory)
-    * Mag Case will be 6x8
-    * Weapons Case will be 6x10
-    * Item restrictions in backpacks and secure cases will be ON
+    * Two pockets will be `2` units tall
+    * Junk Box will be `12x16` units (easier to see inventory)
+    * Mag Case will be `6x8` units 
+    * Weapons Case will be `6x10` units 
+    * Item restrictions in backpacks and secure cases will be `ON`
 
 ## Installation
 
