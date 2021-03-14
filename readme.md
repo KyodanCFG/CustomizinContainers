@@ -6,6 +6,8 @@ By Kyodan
 ![Screenshot](cover.png)
 
 This mod allows you to resize all containers in the game (including pockets), and can remove restrictions from backpacks and secure cases!
+
+Download the latest release (in ZIP format) here: https://github.com/KyodanCFG/CustomizinContainers/releases
                                                                              
 ## Info
 
