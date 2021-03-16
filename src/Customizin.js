@@ -1,6 +1,6 @@
 exports.mod = (mod_info) => {
     logger.logInfo(`   [MOD] Loading: ${mod_info.name} (${mod_info.version}) by ${mod_info.author}`);
-    let itemsCache = fileIO.readParsed(global.db.user.cache.items);						    // read from server cache (items)
+    let itemsCache = fileIO.readParsed(db.user.cache.items);						    // read from server cache (items)
     let settingsFile = require("../settings.json");							                // read from settings.json file
     let containerSettings = settingsFile.containers;                                        // for tidying up code/abstraction	
 
@@ -267,10 +267,10 @@ exports.mod = (mod_info) => {
             }
         }
 
-        if (containerSettings.removeRestrictions === true) {                            //
+        if (containerSettings.removeRestrictions === true) {                            // if `removeRestrictions` is true, let's remove restrictions for secure cases and backpacks
             for (let item in itemsCache.data) {
                 let cacheData = itemsCache.data[item];                                  // for tidying up code/abstraction
-                let propsData = itemsCache.data[item]._props;                           // for tidying up code/abstraction
+                let propsData = itemsCache.data[item]._props;                           // for tidying up code/abstraction (cuz fuck it why not)
                 
                 if (cacheData._parent === "5448bf274bdc2dfc2f8b456a"                    // secure container parent ID
                 || cacheData._parent === "5448e53e4bdc2d60728b4567"                     // backpack parent ID (comment out this line if you want item restrictions in backpacks)
@@ -278,12 +278,12 @@ exports.mod = (mod_info) => {
                     propsData.Grids[0]._props.filters = [];
                 }
             }
-            logger.logInfo(`   [MOD] -- Remove Secure Case Restrictions: ON`);
+            logger.logInfo(`   [MOD] -- Remove Secure Case and Backpack Restrictions: ON`);
         } else {
-            logger.logInfo(`   [MOD] -- Remove Secure Case Restrictions: OFF`);
+            logger.logInfo(`   [MOD] -- Remove Secure Case and Backpack Restrictions: OFF`);
         }
 
-        fileIO.write(global.db.user.cache.items, itemsCache);						    // write all changes to cache (items.json specifically)
+        fileIO.write(db.user.cache.items, itemsCache);						            // write all changes to cache (items.json specifically)
         logger.logSuccess(`[MOD] -- ${mod_info.name}: ON`);
     } else {                                                                            // if 'customizinContainers' var in settings.json is set to false, skip entire script
         logger.logSuccess(`[MOD] -- ${mod_info.name}: OFF`); 
