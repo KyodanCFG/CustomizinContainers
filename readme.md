@@ -1,4 +1,4 @@
-Customizin' Containers (for JET v1.1.0) ![GitHub all releases](https://img.shields.io/github/downloads/KyodanCFG/CustomizinContainers/total)
+Customizin' Containers (for JET v1.1.0) ![GitHub all releases](https://img.shields.io/github/downloads/KyodanCFG/CustomizinContainers/total?label=Downloads&style=flat-square)
 ----------------
 Version `1.1.0` (`03.13.2021`)
 By Kyodan
