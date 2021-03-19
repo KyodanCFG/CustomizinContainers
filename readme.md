@@ -1,6 +1,6 @@
 Customizin' Containers (for JET Server v1.1.0) ![GitHub all releases](https://img.shields.io/github/downloads/KyodanCFG/CustomizinContainers/total?color=green&label=Downloads&style=flat-square) 
 ----------------
-Version `1.1.0` (`03.13.2021`)
+Version `1.1.0` (`03.13.2021`) 
 By Kyodan
 
 ![Screenshot](cover.png)
