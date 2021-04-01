@@ -2,7 +2,14 @@ exports.mod = (mod_info) => {
     logger.logInfo(`   [MOD] Loading: ${mod_info.name} (${mod_info.version}) by ${mod_info.author}`);
     let itemsCache = fileIO.readParsed(db.user.cache.items);						    // read from server cache (items)
     let settingsFile = require("../settings.json");							                // read from settings.json file
-    let containerSettings = settingsFile.containers;                                        // for tidying up code/abstraction	
+    let containerSettings = settingsFile.containers; 
+    
+    const MAP = {
+        "one": 0,
+        "two": 1,
+        "three": 2,
+        "four": 3
+    }// for tidying up code/abstraction	
 
     if (containerSettings.customizinContainers === true) {                                  // if 'customizinContainers' var in settings.json is set to true, execute script
         for (let item in itemsCache.data) {
@@ -10,21 +17,15 @@ exports.mod = (mod_info) => {
         
             // Pockets (4 total)
             if (cacheData._id === "557ffd194bdc2d28148b457f") {
-                if (containerSettings.pockets.one.width > 0 && containerSettings.pockets.one.height > 0 &&
-                    containerSettings.pockets.two.width > 0 && containerSettings.pockets.two.height > 0 &&
-                    containerSettings.pockets.three.width > 0 && containerSettings.pockets.three.height > 0 &&
-                    containerSettings.pockets.four.width > 0 && containerSettings.pockets.four.height > 0) {
-                        cacheData._props.Grids[0]._props.cellsH = containerSettings.pockets.one.width;
-                        cacheData._props.Grids[0]._props.cellsV = containerSettings.pockets.one.height;
-                        cacheData._props.Grids[1]._props.cellsH = containerSettings.pockets.two.width;
-                        cacheData._props.Grids[1]._props.cellsV = containerSettings.pockets.two.height;
-                        cacheData._props.Grids[2]._props.cellsH = containerSettings.pockets.three.width;
-                        cacheData._props.Grids[2]._props.cellsV = containerSettings.pockets.three.height;
-                        cacheData._props.Grids[3]._props.cellsH = containerSettings.pockets.four.width;
-                        cacheData._props.Grids[3]._props.cellsV = containerSettings.pockets.four.height;
-                } else {
-                    logger.logError(`[MOD] ${mod_info.name}: settings.pockets variables has no value/set to 0/is not a number! Check user/mods/${mod_info.author}-${mod_info.name}-${mod_info.version}/settings.json`);
-                    return;
+                for (let obj in containerSettings.pockets) {
+                    if (containerSettings.pockets[obj].width > 0 && containerSettings.pockets[obj].height > 0) {
+                        cacheData._props.Grids[MAP[obj]]._props.cellsH = containerSettings.pockets[obj].width;
+                        cacheData._props.Grids[MAP[obj]]._props.cellsV = containerSettings.pockets[obj].height;
+                        continue;
+                    } else {
+                        logger.logError(`There is no value set for pocket ${obj}.`)
+                        return;
+                    }
                 }
             }
 
